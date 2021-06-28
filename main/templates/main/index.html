@@ -1,0 +1,631 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shalash Holiday Home - Календарь доступности номеров</title>
+    	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta content="ru" http-equiv="Content-Language">
+    <link rel="stylesheet" href="{% static 'index/widget_style_custom.css' %}">
+    <link href="{% static 'index/widget_style.css' %}" rel="stylesheet" type="text/css">
+	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover" name="viewport">
+	<link href="{% static 'index/widget_calendar.js' %}" rel="stylesheet" type="text/css">
+	<script async src="{% static 'index/tag.js' %}"></script>
+	<script src="{% static 'index/widget_jquery.js' %}" style="color: rgb(0, 0, 0);"></script>
+	<script src="{% static 'index/datepicker-ru.js' %}" type="text/javascript"></script>
+	<script src="{% static 'index/widget_lib.js' %}" type="text/javascript"></script>
+	<link rel="prefetch">
+</head>
+<body>
+	<script type="text/javascript">
+	var utoffset='5',
+	   booking_mode = 1,
+	   room_mode = 0,
+	   user_id = 5221,
+	   ymcounter = 71462185, fbcounter = 0,
+	   lgparam = {download: false, iframeMaxWidth: '800px', hideBarsDelay: 0, dynamic: true, counter:false, zoom:false, actualSize:false},
+	   oneday = false,
+	   oneday_multi = false,
+	   atonce = true,
+	   locale = 'ru',
+	   only_view = 0;
+	</script>
+	<div class="widget-wrapper page-calendar">
+		<div class="widget-list">
+			<div class="country">
+				<div class="country-button">
+					<span class="flag24 flag24-ru"></span> <span class="country-title">Русский</span>
+				</div>
+				<ul class="country-list hidden">
+					<li>
+						<a href="https://litepms.ru/widget/calendar?id=5221&amp;lang=ua"><span class="flag24 flag24-ua"></span><span>Український</span></a>
+					</li>
+					<li>
+						<a href="https://litepms.ru/widget/calendar?id=5221&amp;lang=en"><span class="flag24 flag24-en"></span><span>English</span></a>
+					</li>
+					<li>
+						<a href="https://litepms.ru/widget/calendar?id=5221&amp;lang=es"><span class="flag24 flag24-es"></span><span>Espanol</span></a>
+					</li>
+					<li>
+						<a href="https://litepms.ru/widget/calendar?id=5221&amp;lang=fr"><span class="flag24 flag24-fr"></span><span>Français</span></a>
+					</li>
+				</ul>
+			</div>
+			<div class="widget-hotel-name">
+				Shalash Holiday Home
+			</div>
+			<div class="widget-hotel-address">
+				Свердловская область, г.Екатеринбург, пос. Шувакиш, ул. Советская д. 64а
+			</div>
+			<div class="widget-hotel-phone">
+				+79632736565
+			</div>
+			<div class="widget-hotel-email">
+				shalashhome@yandex.ru
+			</div>
+			<h4 style="margin-top: 20px;">Календарь доступности</h4>
+			<div class="date-form">
+				<form action="https://litepms.ru/widget/calendar" method="get">
+					<input name="id" type="hidden" value="5221">
+					<div class="form-row datein-input">
+						<label>Выбрать дату:</label>
+						<div class="input-wrapper">
+							<input class="input date hasDatepicker" id="dp1624887575674" maxlength="10" name="d" placeholder="__-__-____" readonly required="" size="35" type="text" value="29-06-2021">
+						</div>
+					</div>
+					<div class="form-row submit-input">
+						<input class="submit" type="submit" value="Показать">
+					</div>
+					<div class="form-row submit-input">
+						<input class="booking-button" onclick="location.href=&#39;/widget/search?id=5221&amp;date_in=29-06-2021&amp;date_out=30-06-2021&amp;search=1&#39;" type="button" value="Вернуться в список">
+					</div>
+				</form>
+			</div>
+			<div class="clear"></div>
+			<div class="info">
+				Чтобы забронировать номер, выделите нужный период мышкой.
+			</div>
+			<div class="calendar-nav">
+				<span class="prev-info">предыдущие 30 / 7 дней</span><a class="prev30 disabled" href="javascript:;" title="30 дней назад">&lt;&lt;</a><a class="prev7 disabled" href="javascript:;" title="7 дней назад">&lt;</a><a class="next7" href="https://litepms.ru/widget/calendar?id=5221&amp;d=06-07-2021" title="7 дней вперед">&gt;</a><a class="next30" href="https://litepms.ru/widget/calendar?id=5221&amp;d=29-07-2021" title="30 дней вперед">&gt;&gt;</a><span class="next-info">следующие 7 / 30 дней</span>
+			</div>
+			<div class="calendar-wrapper">
+				<div class="calendar-fixed">
+					<div class="calendar-fixed-top"></div>
+					<table class="table calendar-table calendar-table-fixed">
+						<thead>
+							<tr>
+								<th class="month">
+									<div class="month-wrap">
+										&nbsp;
+									</div>
+								</th>
+							</tr>
+							<tr>
+								<th class="month">
+									<div class="month-wrap">
+										&nbsp;
+									</div>
+								</th>
+							</tr>
+							<tr>
+								<th class="rooms"><span class="bold">Номера</span></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="room">
+								<td class="firstcol">
+									<div class="room-name-wrap">
+										<span class="room-name" title="Small Shalash 2"><a class="dashed" href="javascript:;" onclick="$(this).lightGallery($.extend(lgparam, {dynamicEl:[{iframe: true, src: &#39;/widget/room_info?id=5221&amp;rid=40800&#39;}]})); $(this).on(&#39;onCloseAfter.lg&#39;,function(event){$(this).data(&#39;lightGallery&#39;).destroy(true); $(this).off(&#39;onCloseAfter.lg&#39;)});">Small Shalash 2</a></span>
+									</div>
+								</td>
+							</tr>
+							<tr class="room">
+								<td class="firstcol">
+									<div class="room-name-wrap">
+										<span class="room-name" title="Small Shalash"><a class="dashed" href="javascript:;" onclick="$(this).lightGallery($.extend(lgparam, {dynamicEl:[{iframe: true, src: &#39;/widget/room_info?id=5221&amp;rid=40134&#39;}]})); $(this).on(&#39;onCloseAfter.lg&#39;,function(event){$(this).data(&#39;lightGallery&#39;).destroy(true); $(this).off(&#39;onCloseAfter.lg&#39;)});">Small Shalash</a></span>
+									</div>
+								</td>
+							</tr>
+							<tr class="room">
+								<td class="firstcol">
+									<div class="room-name-wrap">
+										<span class="room-name" title="Big Shalash"><a class="dashed" href="javascript:;" onclick="$(this).lightGallery($.extend(lgparam, {dynamicEl:[{iframe: true, src: &#39;/widget/room_info?id=5221&amp;rid=36296&#39;}]})); $(this).on(&#39;onCloseAfter.lg&#39;,function(event){$(this).data(&#39;lightGallery&#39;).destroy(true); $(this).off(&#39;onCloseAfter.lg&#39;)});">Big Shalash</a></span>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="calendar-scrollable">
+					<div class="calendar-scrollable-top">
+						<div class="calendar-scrollable-top-content" style="width: 1085px;"></div>
+					</div>
+					<div class="calendar-scrollable-bottom">
+						<table class="table calendar-table" id="calendar">
+							<thead>
+								<tr>
+									<th class="month" colspan="2">
+										<div class="month-wrap" title="Июнь 2021">
+											Июнь 2021
+										</div>
+									</th>
+									<th class="month" colspan="29">
+										<div class="month-wrap" title="Июль 2021">
+											Июль 2021
+										</div>
+									</th>
+								</tr>
+								<tr>
+									<th>
+										<div class="month-wrap">
+											Вт
+										</div>
+									</th>
+									<th>
+										<div class="month-wrap">
+											Ср
+										</div>
+									</th>
+									<th>
+										<div class="month-wrap">
+											Чт
+										</div>
+									</th>
+									<th>
+										<div class="month-wrap">
+											Пт
+										</div>
+									</th>
+									<th class="dayoff">
+										<div class="month-wrap">
+											Сб
+										</div>
+									</th>
+									<th class="dayoff">
+										<div class="month-wrap">
+											Вс
+										</div>
+									</th>
+									<th>
+										<div class="month-wrap">
+											Пн
+										</div>
+									</th>
+									<th>
+										<div class="month-wrap">
+											Вт
+										</div>
+									</th>
+									<th>
+										<div class="month-wrap">
+											Ср
+										</div>
+									</th>
+									<th>
+										<div class="month-wrap">
+											Чт
+										</div>
+									</th>
+									<th>
+										<div class="month-wrap">
+											Пт
+										</div>
+									</th>
+									<th class="dayoff">
+										<div class="month-wrap">
+											Сб
+										</div>
+									</th>
+									<th class="dayoff">
+										<div class="month-wrap">
+											Вс
+										</div>
+									</th>
+									<th>
+										<div class="month-wrap">
+											Пн
+										</div>
+									</th>
+									<th>
+										<div class="month-wrap">
+											Вт
+										</div>
+									</th>
+									<th>
+										<div class="month-wrap">
+											Ср
+										</div>
+									</th>
+									<th>
+										<div class="month-wrap">
+											Чт
+										</div>
+									</th>
+									<th>
+										<div class="month-wrap">
+											Пт
+										</div>
+									</th>
+									<th class="dayoff">
+										<div class="month-wrap">
+											Сб
+										</div>
+									</th>
+									<th class="dayoff">
+										<div class="month-wrap">
+											Вс
+										</div>
+									</th>
+									<th>
+										<div class="month-wrap">
+											Пн
+										</div>
+									</th>
+									<th>
+										<div class="month-wrap">
+											Вт
+										</div>
+									</th>
+									<th>
+										<div class="month-wrap">
+											Ср
+										</div>
+									</th>
+									<th>
+										<div class="month-wrap">
+											Чт
+										</div>
+									</th>
+									<th>
+										<div class="month-wrap">
+											Пт
+										</div>
+									</th>
+									<th class="dayoff">
+										<div class="month-wrap">
+											Сб
+										</div>
+									</th>
+									<th class="dayoff">
+										<div class="month-wrap">
+											Вс
+										</div>
+									</th>
+									<th>
+										<div class="month-wrap">
+											Пн
+										</div>
+									</th>
+									<th>
+										<div class="month-wrap">
+											Вт
+										</div>
+									</th>
+									<th>
+										<div class="month-wrap">
+											Ср
+										</div>
+									</th>
+									<th>
+										<div class="month-wrap">
+											Чт
+										</div>
+									</th>
+								</tr>
+								<tr class="dates">
+									<th>29</th>
+									<th>30</th>
+									<th>1</th>
+									<th>2</th>
+									<th class="dayoff">3</th>
+									<th class="dayoff">4</th>
+									<th>5</th>
+									<th>6</th>
+									<th>7</th>
+									<th>8</th>
+									<th>9</th>
+									<th class="dayoff">10</th>
+									<th class="dayoff">11</th>
+									<th>12</th>
+									<th>13</th>
+									<th>14</th>
+									<th>15</th>
+									<th>16</th>
+									<th class="dayoff">17</th>
+									<th class="dayoff">18</th>
+									<th>19</th>
+									<th>20</th>
+									<th>21</th>
+									<th>22</th>
+									<th>23</th>
+									<th class="dayoff">24</th>
+									<th class="dayoff">25</th>
+									<th>26</th>
+									<th>27</th>
+									<th>28</th>
+									<th>29</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="room" id="room40800">
+									<td class="booking" data-id="r40800d1624906800" title="Занято. 29 июня 2021, Вт">&nbsp;</td>
+									<td class="booking" data-id="r40800d1624993200" title="Занято. 30 июня 2021, Ср">&nbsp;</td>
+									<td class="booking" data-id="r40800d1625079600" title="Занято. 1 июля 2021, Чт">&nbsp;</td>
+									<td class="freeday end_booking" data-id="r40800d1625166000" title="Свободно. 2 июля 2021, Пт">&nbsp;</td>
+									<td class="booking dayoff start_booking" data-id="r40800d1625252400" title="Занято. 3 июля 2021, Сб">&nbsp;</td>
+									<td class="freeday dayoff end_booking" data-id="r40800d1625338800" title="Свободно. 4 июля 2021, Вс">&nbsp;</td>
+									<td class="freeday" data-id="r40800d1625425200" title="Свободно. 5 июля 2021, Пн">&nbsp;</td>
+									<td class="booking start_booking" data-id="r40800d1625511600" title="Занято. 6 июля 2021, Вт">&nbsp;</td>
+									<td class="booking" data-id="r40800d1625598000" title="Занято. 7 июля 2021, Ср">&nbsp;</td>
+									<td class="booking" data-id="r40800d1625684400" title="Занято. 8 июля 2021, Чт">&nbsp;</td>
+									<td class="freeday end_booking" data-id="r40800d1625770800" title="Свободно. 9 июля 2021, Пт">&nbsp;</td>
+									<td class="booking dayoff start_booking" data-id="r40800d1625857200" title="Занято. 10 июля 2021, Сб">&nbsp;</td>
+									<td class="booking dayoff" data-id="r40800d1625943600" title="Занято. 11 июля 2021, Вс">&nbsp;</td>
+									<td class="booking" data-id="r40800d1626030000" title="Занято. 12 июля 2021, Пн">&nbsp;</td>
+									<td class="freeday end_booking" data-id="r40800d1626116400" title="Свободно. 13 июля 2021, Вт">&nbsp;</td>
+									<td class="freeday" data-id="r40800d1626202800" title="Свободно. 14 июля 2021, Ср">&nbsp;</td>
+									<td class="freeday" data-id="r40800d1626289200" title="Свободно. 15 июля 2021, Чт">&nbsp;</td>
+									<td class="booking start_booking" data-id="r40800d1626375600" title="Занято. 16 июля 2021, Пт">&nbsp;</td>
+									<td class="booking dayoff" data-id="r40800d1626462000" title="Занято. 17 июля 2021, Сб">&nbsp;</td>
+									<td class="booking dayoff" data-id="r40800d1626548400" title="Занято. 18 июля 2021, Вс">&nbsp;</td>
+									<td class="freeday end_booking" data-id="r40800d1626634800" title="Свободно. 19 июля 2021, Пн">&nbsp;</td>
+									<td class="freeday" data-id="r40800d1626721200" title="Свободно. 20 июля 2021, Вт">&nbsp;</td>
+									<td class="freeday" data-id="r40800d1626807600" title="Свободно. 21 июля 2021, Ср">&nbsp;</td>
+									<td class="booking start_booking" data-id="r40800d1626894000" title="Занято. 22 июля 2021, Чт">&nbsp;</td>
+									<td class="freeday end_booking" data-id="r40800d1626980400" title="Свободно. 23 июля 2021, Пт">&nbsp;</td>
+									<td class="booking dayoff start_booking" data-id="r40800d1627066800" title="Занято. 24 июля 2021, Сб">&nbsp;</td>
+									<td class="freeday dayoff end_booking" data-id="r40800d1627153200" title="Свободно. 25 июля 2021, Вс">&nbsp;</td>
+									<td class="booking start_booking" data-id="r40800d1627239600" title="Занято. 26 июля 2021, Пн">&nbsp;</td>
+									<td class="freeday end_booking" data-id="r40800d1627326000" title="Свободно. 27 июля 2021, Вт">&nbsp;</td>
+									<td class="freeday" data-id="r40800d1627412400" title="Свободно. 28 июля 2021, Ср">&nbsp;</td>
+									<td class="freeday" data-id="r40800d1627498800" title="Свободно. 29 июля 2021, Чт">&nbsp;</td>
+								</tr>
+								<tr class="room" id="room40134">
+									<td class="booking" data-id="r40134d1624906800" title="Занято. 29 июня 2021, Вт">&nbsp;</td>
+									<td class="booking" data-id="r40134d1624993200" title="Занято. 30 июня 2021, Ср">&nbsp;</td>
+									<td class="booking" data-id="r40134d1625079600" title="Занято. 1 июля 2021, Чт">&nbsp;</td>
+									<td class="booking" data-id="r40134d1625166000" title="Занято. 2 июля 2021, Пт">&nbsp;</td>
+									<td class="booking dayoff" data-id="r40134d1625252400" title="Занято. 3 июля 2021, Сб">&nbsp;</td>
+									<td class="freeday dayoff end_booking" data-id="r40134d1625338800" title="Свободно. 4 июля 2021, Вс">&nbsp;</td>
+									<td class="booking start_booking" data-id="r40134d1625425200" title="Занято. 5 июля 2021, Пн">&nbsp;</td>
+									<td class="freeday end_booking" data-id="r40134d1625511600" title="Свободно. 6 июля 2021, Вт">&nbsp;</td>
+									<td class="booking start_booking" data-id="r40134d1625598000" title="Занято. 7 июля 2021, Ср">&nbsp;</td>
+									<td class="freeday end_booking" data-id="r40134d1625684400" title="Свободно. 8 июля 2021, Чт">&nbsp;</td>
+									<td class="freeday" data-id="r40134d1625770800" title="Свободно. 9 июля 2021, Пт">&nbsp;</td>
+									<td class="booking dayoff start_booking" data-id="r40134d1625857200" title="Занято. 10 июля 2021, Сб">&nbsp;</td>
+									<td class="freeday dayoff end_booking" data-id="r40134d1625943600" title="Свободно. 11 июля 2021, Вс">&nbsp;</td>
+									<td class="freeday" data-id="r40134d1626030000" title="Свободно. 12 июля 2021, Пн">&nbsp;</td>
+									<td class="freeday" data-id="r40134d1626116400" title="Свободно. 13 июля 2021, Вт">&nbsp;</td>
+									<td class="freeday" data-id="r40134d1626202800" title="Свободно. 14 июля 2021, Ср">&nbsp;</td>
+									<td class="booking start_booking" data-id="r40134d1626289200" title="Занято. 15 июля 2021, Чт">&nbsp;</td>
+									<td class="freeday end_booking" data-id="r40134d1626375600" title="Свободно. 16 июля 2021, Пт">&nbsp;</td>
+									<td class="booking dayoff start_booking" data-id="r40134d1626462000" title="Занято. 17 июля 2021, Сб">&nbsp;</td>
+									<td class="booking dayoff" data-id="r40134d1626548400" title="Занято. 18 июля 2021, Вс">&nbsp;</td>
+									<td class="freeday end_booking" data-id="r40134d1626634800" title="Свободно. 19 июля 2021, Пн">&nbsp;</td>
+									<td class="freeday" data-id="r40134d1626721200" title="Свободно. 20 июля 2021, Вт">&nbsp;</td>
+									<td class="freeday" data-id="r40134d1626807600" title="Свободно. 21 июля 2021, Ср">&nbsp;</td>
+									<td class="freeday" data-id="r40134d1626894000" title="Свободно. 22 июля 2021, Чт">&nbsp;</td>
+									<td class="freeday" data-id="r40134d1626980400" title="Свободно. 23 июля 2021, Пт">&nbsp;</td>
+									<td class="booking dayoff start_booking" data-id="r40134d1627066800" title="Занято. 24 июля 2021, Сб">&nbsp;</td>
+									<td class="booking dayoff" data-id="r40134d1627153200" title="Занято. 25 июля 2021, Вс">&nbsp;</td>
+									<td class="booking" data-id="r40134d1627239600" title="Занято. 26 июля 2021, Пн">&nbsp;</td>
+									<td class="freeday end_booking" data-id="r40134d1627326000" title="Свободно. 27 июля 2021, Вт">&nbsp;</td>
+									<td class="booking start_booking" data-id="r40134d1627412400" title="Занято. 28 июля 2021, Ср">&nbsp;</td>
+									<td class="freeday end_booking" data-id="r40134d1627498800" title="Свободно. 29 июля 2021, Чт">&nbsp;</td>
+								</tr>
+								<tr class="room" id="room36296">
+									<td class="booking" data-id="r36296d1624906800" title="Занято. 29 июня 2021, Вт">&nbsp;</td>
+									<td class="booking" data-id="r36296d1624993200" title="Занято. 30 июня 2021, Ср">&nbsp;</td>
+									<td class="booking" data-id="r36296d1625079600" title="Занято. 1 июля 2021, Чт">&nbsp;</td>
+									<td class="booking" data-id="r36296d1625166000" title="Занято. 2 июля 2021, Пт">&nbsp;</td>
+									<td class="booking dayoff" data-id="r36296d1625252400" title="Занято. 3 июля 2021, Сб">&nbsp;</td>
+									<td class="booking dayoff" data-id="r36296d1625338800" title="Занято. 4 июля 2021, Вс">&nbsp;</td>
+									<td class="booking" data-id="r36296d1625425200" title="Занято. 5 июля 2021, Пн">&nbsp;</td>
+									<td class="freeday end_booking" data-id="r36296d1625511600" title="Свободно. 6 июля 2021, Вт">&nbsp;</td>
+									<td class="booking start_booking" data-id="r36296d1625598000" title="Занято. 7 июля 2021, Ср">&nbsp;</td>
+									<td class="booking" data-id="r36296d1625684400" title="Занято. 8 июля 2021, Чт">&nbsp;</td>
+									<td class="booking" data-id="r36296d1625770800" title="Занято. 9 июля 2021, Пт">&nbsp;</td>
+									<td class="booking dayoff" data-id="r36296d1625857200" title="Занято. 10 июля 2021, Сб">&nbsp;</td>
+									<td class="booking dayoff" data-id="r36296d1625943600" title="Занято. 11 июля 2021, Вс">&nbsp;</td>
+									<td class="freeday end_booking" data-id="r36296d1626030000" title="Свободно. 12 июля 2021, Пн">&nbsp;</td>
+									<td class="freeday" data-id="r36296d1626116400" title="Свободно. 13 июля 2021, Вт">&nbsp;</td>
+									<td class="freeday" data-id="r36296d1626202800" title="Свободно. 14 июля 2021, Ср">&nbsp;</td>
+									<td class="freeday" data-id="r36296d1626289200" title="Свободно. 15 июля 2021, Чт">&nbsp;</td>
+									<td class="freeday" data-id="r36296d1626375600" title="Свободно. 16 июля 2021, Пт">&nbsp;</td>
+									<td class="booking dayoff start_booking" data-id="r36296d1626462000" title="Занято. 17 июля 2021, Сб">&nbsp;</td>
+									<td class="booking dayoff" data-id="r36296d1626548400" title="Занято. 18 июля 2021, Вс">&nbsp;</td>
+									<td class="freeday end_booking" data-id="r36296d1626634800" title="Свободно. 19 июля 2021, Пн">&nbsp;</td>
+									<td class="freeday" data-id="r36296d1626721200" title="Свободно. 20 июля 2021, Вт">&nbsp;</td>
+									<td class="freeday" data-id="r36296d1626807600" title="Свободно. 21 июля 2021, Ср">&nbsp;</td>
+									<td class="freeday" data-id="r36296d1626894000" title="Свободно. 22 июля 2021, Чт">&nbsp;</td>
+									<td class="booking start_booking" data-id="r36296d1626980400" title="Занято. 23 июля 2021, Пт">&nbsp;</td>
+									<td class="booking dayoff" data-id="r36296d1627066800" title="Занято. 24 июля 2021, Сб">&nbsp;</td>
+									<td class="booking dayoff" data-id="r36296d1627153200" title="Занято. 25 июля 2021, Вс">&nbsp;</td>
+									<td class="booking" data-id="r36296d1627239600" title="Занято. 26 июля 2021, Пн">&nbsp;</td>
+									<td class="freeday end_booking" data-id="r36296d1627326000" title="Свободно. 27 июля 2021, Вт">&nbsp;</td>
+									<td class="freeday" data-id="r36296d1627412400" title="Свободно. 28 июля 2021, Ср">&nbsp;</td>
+									<td class="freeday" data-id="r36296d1627498800" title="Свободно. 29 июля 2021, Чт">&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<ul class="color-description">
+				<li><i class="booking"></i> - занято</li>
+				<li><i class="end_booking"></i> - возможен заезд в этот день</li>
+				<li><i class="start_booking"></i> - возможен выезд в этот день</li>
+			</ul>
+			<div id="new-booking">
+				<form action="https://litepms.ru/widget/order" method="get">
+					<input name="id" type="hidden" value="5221"> <input name="date_in" type="hidden" value=""> <input name="date_out" type="hidden" value=""> <input name="room_id" type="hidden" value=""> <input name="from" type="hidden" value="cal"> <input name="d" type="hidden" value="29-06-2021">
+					<div class="booking-form-dates">
+						Заезд <span class="datein"></span><span class="oneday hidden">, отъезд <span class="dateout"></span></span>
+					</div>
+					<div class="booking-form-price">
+						<span class="price"></span> <span class="fordays"></span>
+					</div>
+					<div>
+						<input class="submit" type="submit" value="Забронировать"> <input class="submit close-booking-form" type="button" value="Отмена">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="copy">
+			Сервис бронирования предоставлен <a href="https://litepms.ru/" target="_blank">Lite PMS</a>
+		</div>
+	</div>
+	<script src="{% static 'index/widget_calendar.js' %}" type="text/javascript">
+	</script>
+	<div class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" id="ui-datepicker-div">
+		<div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all">
+			<a class="ui-datepicker-next ui-corner-all" data-event="click" data-handler="next" title="След&gt;"><span class="ui-icon ui-icon-circle-triangle-e">След&gt;</span></a>
+			<div class="ui-datepicker-title">
+				<select class="ui-datepicker-month" data-event="change" data-handler="selectMonth">
+					<option selected="selected" value="5">
+						Июн
+					</option>
+					<option value="6">
+						Июл
+					</option>
+					<option value="7">
+						Авг
+					</option>
+					<option value="8">
+						Сен
+					</option>
+					<option value="9">
+						Окт
+					</option>
+					<option value="10">
+						Ноя
+					</option>
+					<option value="11">
+						Дек
+					</option>
+				</select><select class="ui-datepicker-year" data-event="change" data-handler="selectYear">
+					<option selected="selected" value="2021">
+						2021
+					</option>
+					<option value="2022">
+						2022
+					</option>
+					<option value="2023">
+						2023
+					</option>
+					<option value="2024">
+						2024
+					</option>
+					<option value="2025">
+						2025
+					</option>
+					<option value="2026">
+						2026
+					</option>
+					<option value="2027">
+						2027
+					</option>
+					<option value="2028">
+						2028
+					</option>
+					<option value="2029">
+						2029
+					</option>
+					<option value="2030">
+						2030
+					</option>
+					<option value="2031">
+						2031
+					</option>
+				</select>
+			</div>
+		</div>
+		<table class="ui-datepicker-calendar">
+			<thead>
+				<tr>
+					<th scope="col"><span title="понедельник">Пн</span></th>
+					<th scope="col"><span title="вторник">Вт</span></th>
+					<th scope="col"><span title="среда">Ср</span></th>
+					<th scope="col"><span title="четверг">Чт</span></th>
+					<th scope="col"><span title="пятница">Пт</span></th>
+					<th class="ui-datepicker-week-end" scope="col"><span title="суббота">Сб</span></th>
+					<th class="ui-datepicker-week-end" scope="col"><span title="воскресенье">Вс</span></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"><span class="ui-state-default">31</span></td>
+					<td class=" ui-datepicker-unselectable ui-state-disabled"><span class="ui-state-default">1</span></td>
+					<td class=" ui-datepicker-unselectable ui-state-disabled"><span class="ui-state-default">2</span></td>
+					<td class=" ui-datepicker-unselectable ui-state-disabled"><span class="ui-state-default">3</span></td>
+					<td class=" ui-datepicker-unselectable ui-state-disabled"><span class="ui-state-default">4</span></td>
+					<td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled"><span class="ui-state-default">5</span></td>
+					<td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled"><span class="ui-state-default">6</span></td>
+				</tr>
+				<tr>
+					<td class=" ui-datepicker-unselectable ui-state-disabled"><span class="ui-state-default">7</span></td>
+					<td class=" ui-datepicker-unselectable ui-state-disabled"><span class="ui-state-default">8</span></td>
+					<td class=" ui-datepicker-unselectable ui-state-disabled"><span class="ui-state-default">9</span></td>
+					<td class=" ui-datepicker-unselectable ui-state-disabled"><span class="ui-state-default">10</span></td>
+					<td class=" ui-datepicker-unselectable ui-state-disabled"><span class="ui-state-default">11</span></td>
+					<td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled"><span class="ui-state-default">12</span></td>
+					<td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled"><span class="ui-state-default">13</span></td>
+				</tr>
+				<tr>
+					<td class=" ui-datepicker-unselectable ui-state-disabled"><span class="ui-state-default">14</span></td>
+					<td class=" ui-datepicker-unselectable ui-state-disabled"><span class="ui-state-default">15</span></td>
+					<td class=" ui-datepicker-unselectable ui-state-disabled"><span class="ui-state-default">16</span></td>
+					<td class=" ui-datepicker-unselectable ui-state-disabled"><span class="ui-state-default">17</span></td>
+					<td class=" ui-datepicker-unselectable ui-state-disabled"><span class="ui-state-default">18</span></td>
+					<td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled"><span class="ui-state-default">19</span></td>
+					<td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled"><span class="ui-state-default">20</span></td>
+				</tr>
+				<tr>
+					<td class=" ui-datepicker-unselectable ui-state-disabled"><span class="ui-state-default">21</span></td>
+					<td class=" ui-datepicker-unselectable ui-state-disabled"><span class="ui-state-default">22</span></td>
+					<td class=" ui-datepicker-unselectable ui-state-disabled"><span class="ui-state-default">23</span></td>
+					<td class=" ui-datepicker-unselectable ui-state-disabled"><span class="ui-state-default">24</span></td>
+					<td class=" ui-datepicker-unselectable ui-state-disabled"><span class="ui-state-default">25</span></td>
+					<td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled"><span class="ui-state-default">26</span></td>
+					<td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled"><span class="ui-state-default">27</span></td>
+				</tr>
+				<tr>
+					<td class=" ui-datepicker-today" data-event="click" data-handler="selectDay" data-month="5" data-year="2021">
+						<a class="ui-state-default ui-state-highlight" href="https://litepms.ru/widget/calendar?id=5221#">28</a>
+					</td>
+					<td class=" ui-datepicker-current-day" data-event="click" data-handler="selectDay" data-month="5" data-year="2021">
+						<a class="ui-state-default ui-state-active" href="https://litepms.ru/widget/calendar?id=5221#">29</a>
+					</td>
+					<td class="" data-event="click" data-handler="selectDay" data-month="5" data-year="2021">
+						<a class="ui-state-default" href="https://litepms.ru/widget/calendar?id=5221#">30</a>
+					</td>
+					<td class=" ui-datepicker-other-month" data-event="click" data-handler="selectDay" data-month="6" data-year="2021">
+						<a class="ui-state-default ui-priority-secondary" href="https://litepms.ru/widget/calendar?id=5221#">1</a>
+					</td>
+					<td class=" ui-datepicker-other-month" data-event="click" data-handler="selectDay" data-month="6" data-year="2021">
+						<a class="ui-state-default ui-priority-secondary" href="https://litepms.ru/widget/calendar?id=5221#">2</a>
+					</td>
+					<td class=" ui-datepicker-week-end ui-datepicker-other-month" data-event="click" data-handler="selectDay" data-month="6" data-year="2021">
+						<a class="ui-state-default ui-priority-secondary" href="https://litepms.ru/widget/calendar?id=5221#">3</a>
+					</td>
+					<td class=" ui-datepicker-week-end ui-datepicker-other-month" data-event="click" data-handler="selectDay" data-month="6" data-year="2021">
+						<a class="ui-state-default ui-priority-secondary" href="https://litepms.ru/widget/calendar?id=5221#">4</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="ui-datepicker-buttonpane ui-widget-content">
+			<button class="ui-datepicker-current ui-state-default ui-priority-secondary ui-corner-all" data-event="click" data-handler="today" type="button">Сегодня</button><button class="ui-datepicker-close ui-state-default ui-priority-primary ui-corner-all" data-event="click" data-handler="hide" type="button">Закрыть</button>
+		</div>
+	</div>
+	<div class="scrollToTop" title="наверх"></div><!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+	  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+	  m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+	  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+	  ym(27088613, "init", {clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false,trackHash:true});
+	  ym(71462185, "init", {clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true,trackHash:true});
+	</script> <noscript>
+	<div><img alt="" src="https://mc.yandex.ru/watch/27088613" style="position:absolute; left:-9999px;"> <img alt="" src="//mc.yandex.ru/watch/71462185?ut=noindex" style="position:absolute; left:-9999px;"></div></noscript>
+</body>
+</html>

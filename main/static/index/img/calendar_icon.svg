@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X6 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="15mm" height="15mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 1500 1500"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+ </defs>
+   <g>
+    <path d="M94 188l281 0 0 93 94 0 0 -93 562 0 0 93 94 0 0 -93 281 0 0 1218 -1312 0 0 -1218zm-94 1312l1500 0 0 -1406 -375 0 0 -94 -94 0 0 94 -562 0 0 -94 -94 0 0 94 -375 0 0 1406z"/>
+    <polygon points="188,469 1313,469 1313,375 188,375 "/>
+    <polygon points="563,844 938,844 938,750 563,750 "/>
+    <polygon points="563,1219 938,1219 938,1125 563,1125 "/>
+    <polygon points="563,656 938,656 938,563 563,563 "/>
+    <polygon points="563,1031 938,1031 938,938 563,938 "/>
+    <polygon points="1031,844 1313,844 1313,750 1031,750 "/>
+    <polygon points="1031,1219 1313,1219 1313,1125 1031,1125 "/>
+    <polygon points="188,844 469,844 469,750 188,750 "/>
+    <polygon points="188,1219 469,1219 469,1125 188,1125 "/>
+    <polygon points="1031,656 1313,656 1313,563 1031,563 "/>
+    <polygon points="1031,1031 1313,1031 1313,938 1031,938 "/>
+    <polygon points="188,656 469,656 469,563 188,563 "/>
+    <polygon points="188,1031 469,1031 469,938 188,938 "/>
+   </g>
+</svg>
